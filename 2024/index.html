@@ -23,46 +23,48 @@
     </style>
 </head>
 <body>
-<audio autoplay="autoplay">
-    <source src="music/bloomingBegonia.mp3" type="audio/mp3"/>
-    <source src="music/bloomingBegonia.mp3" type="audio/mpeg">
-    <source src="music/bloomingBegonia.mp3" type="audio/ogg">
-    <embed height="50" width="100" src="music/bloomingBegonia.mp3">
-</audio>
 <div id="main">
     <div id="wrap">
         <div id="text">
             <div id="code">
                 <font color="#FF0000">
-                    <span class="say"><h1>To vv</h1></span><br><br>
-                    <span class="say">我希望有个如你一般的人。</span><br> <br>
-                    <span class="say">如这山间清晨一般明亮清爽，</span><br><br>
-                    <span class="say">如奔赴古城道路上阳光一般的人，</span><br><br>
-                    <span class="say">温暖而不炙热，覆盖我所有肌肤。</span><br><br>
-                    <span class="say">由起点到夜晚，由山野到书房，一切问题的答案都很简单。</span><br><br>
-                    <span class="say">我希望有个如你一般的人，贯彻未来，数遍生命的公路牌。</span><br><br>
-                    <span class="say"><span class="space"></span> -- 陆知平 --</span><br>
-                    <span class="say"><h1>生日快乐! vv</h1></span><br>
+                    <span class="say"><h1>vv, 生日快乐呀🎉🎉</h1></span><br><br>
+                    <span class="say">又是一年的生日了，你应该更端庄美丽了吧</span><br> <br>
+                    <span class="say">你最近还好吗，熬夜应该没那么多了吧</span><br><br>
+                    <span class="say">牛角梳有在用么，头发应该更加乌黑浓密了吧</span><br><br>
+                    <span class="say">看到你发的照片了，应该遇到了一个不错的另一半</span><br><br>
+                    <span class="say">其实你侧颜也很美，下次可以尝试一下哦</span><br><br>
+                    <span class="say">我又活了一年了，好快，但是也好慢</span><br><br>
+                    <span class="say">愿你一生平安喜乐，握住每一次小确幸</span><br><br>
+                    <span class="say"><span class="space"></span> -- by 陆知平 2024-04-16</span><br>
+                    <!--                    <span class="say"><h1>生日快乐! vv</h1></span><br>-->
                 </font>
             </div>
         </div>
         <div id="clock-box">
-            <!-- <span class="STYLE1"></span><font color="#33CC00">距离我喜欢你，</font>
-<span class="STYLE1">已经是……</span> -->
             <span class="STYLE1"></span>
             <font color="#33CC00"></font>
             <span class="STYLE1"></span>
             <!-- <div id="clock"></div> -->
         </div>
         <canvas id="canvas" width="1100" height="680"></canvas>
+
     </div>
 
+</div>
+<div>
+    <audio autoplay="autoplay" controls loop hidden="true">
+        <source src="music/bloomingBegonia.mp3" type="audio/mp3"></source>
+        <source src="music/bloomingBegonia.mp3" type="audio/mpeg"></source>
+        <source src="music/bloomingBegonia.mp3" type="audio/ogg"></source>
+        <!--    <embed height="50" width="100" src="music/bloomingBegonia.mp3">-->
+    </audio>
 </div>
 
 <script>
 </script>
 
-<script>
+<script type="application/javascript">
     (function () {
         var canvas = $('#canvas');
 
@@ -201,7 +203,7 @@
             $("#clock-box").fadeIn(500);
             while (true) {
                 timeElapse(together);
-                $await(Jscex.Async.sleep(1000));
+                $await(Jscex.Async.sleep(500));
             }
         }));
 
@@ -218,6 +220,26 @@
 
         runAsync().start();
     })();
+
+    // // 获取canvas元素
+    // const canvas = document.getElementById('canvas');
+    //
+    // // 为canvas元素添加点击事件监听器
+    // canvas.addEventListener('click', (event) => {
+    //     console.log('Canvas clicked!');
+    // });
+    //
+    // // 在页面加载完成后延迟2秒触发canvas的点击事件
+    // window.addEventListener('load', () => {
+    //     setTimeout(() => {
+    //         const clickEvent = new MouseEvent('click', {
+    //             bubbles: true,
+    //             cancelable: true,
+    //             view: window
+    //         });
+    //         canvas.dispatchEvent(clickEvent);
+    //     }, 2000); // 2000毫秒 = 2秒
+    // });
 </script>
 
 </body>
