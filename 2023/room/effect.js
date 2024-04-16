@@ -213,7 +213,7 @@ $('document').ready(function () {
 		msgLoop(0);
 
 		function loadFireWork() {
-			window.open("http://firework.lujianxin.com/", '_self')
+			window.open("http://firework.lujianxin.com/", '_blank')
 		}
 		
 	});

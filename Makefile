@@ -10,3 +10,6 @@ all:
 
 	@echo "构建生日祝福"
 	cd 2023/room/ && make
+
+	@echo "写一首诗"
+	cd 2024/ && make
