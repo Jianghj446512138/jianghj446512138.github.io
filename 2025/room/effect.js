@@ -213,7 +213,7 @@ $('document').ready(function () {
 		msgLoop(0);
 
 		function loadFireWork() {
-			window.open("http://firework.lujianxin.com/", '_blank')
+			window.open("https://jianghj446512138.github.io/2025/firework/index.html#pt_1740824286733", '_blank')
 		}
 		
 	});
