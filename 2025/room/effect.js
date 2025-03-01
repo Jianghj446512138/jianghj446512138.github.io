@@ -213,7 +213,7 @@ $('document').ready(function () {
 		msgLoop(0);
 
 		function loadFireWork() {
-			window.open("https://jianghuijie.icu/2025/room/index.html", '_blank')
+			window.open("https://jianghuijie.icu/2025/firework/index.html", '_blank')
 		}
 		
 	});
