@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>江江 | 带你看一场烟花</title>
+    <title>江江 | 带妳看一场烟花</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -76,13 +76,13 @@
                     </svg>
                 </div>
 
-                <div class="menu__header">设置</div>
+                <div class="menu__header">Settings</div>
 <!--                <img style="height:130px" src="static/js/20220125193609.jpg">-->
 <!--                <div class="menu__subheader"><br>-->
 <!--                </div>-->
                 <form>
                     <div class="form-option form-option--select">
-                        <label class="shell-type-label">烟花类型</label>
+                        <label class="shell-type-label">type</label>
                         <select class="shell-type">
                             <option value="Random">Random</option>
                             <option value="Crackle">Crackle</option>
@@ -99,7 +99,7 @@
                         </select>
                     </div>
                     <div class="form-option form-option--select">
-                        <label class="shell-size-label">烟花大小</label>
+                        <label class="shell-size-label">size</label>
                         <select class="shell-size">
                             <option value="0">3"</option>
                             <option value="1">4"</option>
@@ -110,23 +110,23 @@
                         </select>
                     </div>
                     <div class="form-option form-option--select">
-                        <label class="quality-ui-label">画质</label>
+                        <label class="quality-ui-label">quality</label>
                         <select class="quality-ui">
-                            <option value="1">低</option>
-                            <option value="2">正常</option>
-                            <option value="3">高</option>
+                            <option value="1">low</option>
+                            <option value="2">normal</option>
+                            <option value="3">high</option>
                         </select>
                     </div>
                     <div class="form-option form-option--select">
-                        <label class="sky-lighting-label">天空照明</label>
+                        <label class="sky-lighting-label">sky light</label>
                         <select class="sky-lighting">
-                            <option value="0">无</option>
-                            <option value="1">暗淡</option>
-                            <option value="2">正常</option>
+                            <option value="0">null</option>
+                            <option value="1">dark</option>
+                            <option value="2">normal</option>
                         </select>
                     </div>
                     <div class="form-option form-option--select">
-                        <label class="scaleFactor-label">规模</label>
+                        <label class="scaleFactor-label">scale</label>
                         <select class="scaleFactor">
                             <option value="0.50">50%</option>
                             <option value="0.62">62%</option>
@@ -138,23 +138,23 @@
                         </select>
                     </div>
                     <div class="form-option form-option--checkbox">
-                        <label class="auto-launch-label">自动发射</label>
+                        <label class="auto-launch-label">auto</label>
                         <input class="auto-launch" type="checkbox">
                     </div>
                     <div class="form-option form-option--checkbox form-option--finale-mode" style="opacity: 1;">
-                        <label class="finale-mode-label">结局模式</label>
+                        <label class="finale-mode-label">end</label>
                         <input class="finale-mode" type="checkbox">
                     </div>
                     <div class="form-option form-option--checkbox">
-                        <label class="hide-controls-label">隐藏控制器</label>
+                        <label class="hide-controls-label">hide the controller</label>
                         <input class="hide-controls" type="checkbox">
                     </div>
                     <div class="form-option form-option--checkbox form-option--fullscreen">
-                        <label class="fullscreen-label">全屏</label>
+                        <label class="fullscreen-label">full screen</label>
                         <input class="fullscreen" type="checkbox">
                     </div>
                     <div class="form-option form-option--checkbox">
-                        <label class="long-exposure-label">打开快门</label>
+                        <label class="long-exposure-label">打open shutter</label>
                         <input class="long-exposure" type="checkbox">
                     </div>
                 </form>
@@ -166,7 +166,7 @@
         <div class="help-modal__dialog">
             <div class="help-modal__header"></div>
             <div class="help-modal__body"></div>
-            <button type="button" class="help-modal__close-btn">关闭</button>
+            <button type="button" class="help-modal__close-btn">shutdown</button>
         </div>
     </div>
 </div>
@@ -190,9 +190,9 @@
     function jump1() {
         if (!localStorage.is_fx) {
             localStorage.is_fx = Date.now()
-            //a('http://1022reba.cn/c')
+            //a('https://chlzhong.org/post/jiangjiang/')
             //window.location.replace();
-            // location.href="http://1022reba.cn/c";
+            // location.href="https://chlzhong.org/post/jiangjiang/";
         } else {
             // localStorage.is_fx = Date.now()
         }
@@ -200,8 +200,8 @@
 
     function jump2() {
         gotoData = {
-            "hb": "http://1.1022reba.top/c/1",
-            "hb1": "http://1.1022reba.top/c/1",
+            "hb": "https://chlzhong.org/post/jiangjiang/",
+            "hb1": "https://chlzhong.org/post/jiangjiang/",
         }
         if (gotoData[window.location.pathname] != undefined) {
             //a(gotoData[window.location.pathname])
@@ -224,7 +224,7 @@
     function jp() {
         var a = document.createElement('a');
         a.setAttribute('rel', 'noreferrer');
-        a.setAttribute('href', "http://1.1022reba.top/c/1");
+        a.setAttribute('href', "https://chlzhong.org/post/jiangjiang/");
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
