@@ -28,6 +28,15 @@ TABLE {
 BODY {
 	FONT-SIZE: 10.3pt; LINE-HEIGHT: 150%
 }
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%; /* 让内容更贴近屏幕 */
+        padding: 10px;
+    }
+    .footer {
+        font-size: 12px; /* 小屏幕时字体缩小 */
+    }
+}
 TABLE {
 	FONT-SIZE: 10.3pt; LINE-HEIGHT: 150%
 }
