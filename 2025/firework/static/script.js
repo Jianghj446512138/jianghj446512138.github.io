@@ -303,27 +303,27 @@ const helpContent = {
     },
     quality: {
         header: '画质',
-        body: '整体图形质量。 如果动画运行不流畅，请尝试降低质量。 高质量会大大增加产生的火花数量，并可能导致滞后。'
+        body: '整体图形质量。'
     },
     skyLighting: {
         header: '天空照明',
-        body: '烟花爆炸时照亮背景。 如果背景在屏幕上看起来太亮，请尝试将其设置为“暗淡”或“无”。'
+        body: '烟花爆炸时照亮背景。'
     },
     scaleFactor: {
         header: '规模',
-        body: '允许缩放所有烟花的大小，实质上使您靠近或远离。 对于较大的烟花类型，可以稍微减小比例，尤其是在手机或平板电脑上。'
+        body: '允许缩放所有烟花的大小'
     },
     autoLaunch: {
         header: '自动发射',
-        body: '启用此选项即可自动启动烟花序列，取消勾选你就可以手动控制烟花的发射'
+        body: '启用此选项即可自动启动烟花序列'
     },
     finaleMode: {
         header: '结局模式',
-        body: '发射强烈的烟花。 可能会导致延迟。 需要同时启用“自动发射”。'
+        body: '发射强烈的烟花.需要同时启用“自动发射”。'
     },
     hideControls: {
         header: '隐藏控制器',
-        body: '隐藏屏幕顶部的半透明控件。 对于屏幕截图很有用，或者只是更无缝的体验。 隐藏后，您仍然可以点击右上角以重新打开此菜单。'
+        body: '隐藏屏幕顶部的半透明控件。'
     },
     fullscreen: {
         header: '全屏',
@@ -331,7 +331,7 @@ const helpContent = {
     },
     longExposure: {
         header: '打开快门',
-        body: '实验效果可以保留长时间的光线，类似于保持相机快门打开。'
+        body: '可以保留长时间的光线，类似于保持相机快门打开。'
     }
 };
 
@@ -817,15 +817,15 @@ function init() {
     appNodes.shellSize.innerHTML = options;
 
     setOptionsForSelect(appNodes.quality, [
-        {label: '低', value: QUALITY_LOW},
-        {label: '正常', value: QUALITY_NORMAL},
-        {label: '高', value: QUALITY_HIGH}
+        {label: 'low', value: QUALITY_LOW},
+        {label: 'normal', value: QUALITY_NORMAL},
+        {label: 'high', value: QUALITY_HIGH}
     ]);
 
     setOptionsForSelect(appNodes.skyLighting, [
-        {label: '无', value: SKY_LIGHT_NONE},
-        {label: '暗淡', value: SKY_LIGHT_DIM},
-        {label: '正常', value: SKY_LIGHT_NORMAL}
+        {label: 'black', value: SKY_LIGHT_NONE},
+        {label: 'dark', value: SKY_LIGHT_DIM},
+        {label: 'normal', value: SKY_LIGHT_NORMAL}
     ]);
 
     // 0.9 is mobile default
