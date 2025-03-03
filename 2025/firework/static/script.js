@@ -299,19 +299,19 @@ const helpContent = {
     },
     shellSize: {
         header: 'SIZE',
-        body: 'Select the size of fireworks'
+        body: 'Select the size of fireworks to be launched.'
     },
     quality: {
         header: 'QUALITY',
-        body: 'Overall graphic quality'
+        body: 'Select the graphic quality'
     },
     skyLighting: {
         header: 'SKY LIGHT',
-        body: 'The fireworks illuminate the background when they explode'
+        body: 'This option controls how the background is illuminated when fireworks explode'
     },
     scaleFactor: {
         header: 'SCALE',
-        body: 'Allow scaling of the size for all fireworks'
+        body: 'Adjust the size scale of all the fireworks'
     },
     autoLaunch: {
         header: 'AUTO',
@@ -2296,7 +2296,7 @@ if (IS_HEADER) {
     init();
 } else {
     // Allow status to render, then preload assets and start app.
-    // setLoadingStatus('献给你爱的TA ❤');
+    // setLoadingStatus('给江阿姨');
     setTimeout(() => {
         soundManager.preload()
             .then(
