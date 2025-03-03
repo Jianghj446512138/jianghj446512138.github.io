@@ -294,44 +294,44 @@ const scaleFactorSelector = () => store.state.config.scaleFactor;
 // Help Content
 const helpContent = {
     shellType: {
-        header: '烟花类型',
-        body: '选择将要发射的烟花类型。 选择“随机”是一个不错的选择！'
+        header: 'TYPE',
+        body: 'Select the type of fireworks to be launched. Choosing "Random" is a great option!'
     },
     shellSize: {
-        header: '烟花大小',
-        body: '烟花的大小：以真实的烟花炮弹尺寸为模型，较大的炮弹具有更大的爆发力，带有更多的星星，有时效果更复杂。 但是，较大的尺寸还需要更多的处理能力，并且可能会导致延迟。'
+        header: 'SIZE',
+        body: 'Select the size of fireworks'
     },
     quality: {
-        header: '画质',
-        body: '整体图形质量。'
+        header: 'QUALITY',
+        body: 'Overall graphic quality'
     },
     skyLighting: {
-        header: '天空照明',
-        body: '烟花爆炸时照亮背景。'
+        header: 'SKY LIGHT',
+        body: 'The fireworks illuminate the background when they explode'
     },
     scaleFactor: {
-        header: '规模',
-        body: '允许缩放所有烟花的大小'
+        header: 'SCALE',
+        body: 'Allow scaling of the size for all fireworks'
     },
     autoLaunch: {
-        header: '自动发射',
-        body: '启用此选项即可自动启动烟花序列'
+        header: 'AUTO',
+        body: 'Enable this option to automatically start the fireworks sequence'
     },
     finaleMode: {
-        header: '结局模式',
-        body: '发射强烈的烟花.需要同时启用“自动发射”。'
+        header: 'END',
+        body: 'Launch intense fireworks. Requires "AUTO" to be enabled simultaneously.'
     },
     hideControls: {
-        header: '隐藏控制器',
-        body: '隐藏屏幕顶部的半透明控件。'
+        header: 'HIDE THE CONTROLLER',
+        body: 'Hide the translucent controls at the top of the screen'
     },
     fullscreen: {
-        header: '全屏',
-        body: '切换全屏模式。'
+        header: 'FULL SCREEN',
+        body: 'Toggle full-screen mode.'
     },
     longExposure: {
-        header: '打开快门',
-        body: '可以保留长时间的光线，类似于保持相机快门打开。'
+        header: 'OPEN SHUTEER',
+        body: 'It can retain light for a long time, similar to keeping the camera shutter open.'
     }
 };
 
@@ -817,15 +817,15 @@ function init() {
     appNodes.shellSize.innerHTML = options;
 
     setOptionsForSelect(appNodes.quality, [
-        {label: 'low', value: QUALITY_LOW},
-        {label: 'normal', value: QUALITY_NORMAL},
-        {label: 'high', value: QUALITY_HIGH}
+        {label: 'Low', value: QUALITY_LOW},
+        {label: 'Normal', value: QUALITY_NORMAL},
+        {label: 'High', value: QUALITY_HIGH}
     ]);
 
     setOptionsForSelect(appNodes.skyLighting, [
-        {label: 'black', value: SKY_LIGHT_NONE},
-        {label: 'dark', value: SKY_LIGHT_DIM},
-        {label: 'normal', value: SKY_LIGHT_NORMAL}
+        {label: 'Black', value: SKY_LIGHT_NONE},
+        {label: 'Dark', value: SKY_LIGHT_DIM},
+        {label: 'Normal', value: SKY_LIGHT_NORMAL}
     ]);
 
     // 0.9 is mobile default
